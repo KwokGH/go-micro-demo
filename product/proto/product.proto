@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+package product;
+
+option go_package = "./proto;product";
+
+service Product {
+	rpc AddProduct(AddProductRequest) returns (AddProductResponse){}
+	rpc FindProductByID(RequestID) returns (ProductInfo){}
+	rpc UpdateProduct(ProductInfo) returns (Response) {}
+	rpc DeleteProductByID(RequestID) returns (Response) {}
+}
+
+message AddProductRequest {
+	string name = 1;
+	string sku = 2;
+	double price = 3;
+	string desc = 4;
+	int64  category_id = 5;
+	// repeated 结构体对象
+	repeated ProductImage image = 6;
+	// 商品的尺寸
+	repeated ProductSize size = 7;
+	// 搜索引擎优化的展示的信息
+	ProductSeo seo = 8;
+}
+
+message ProductImage {
+	int64 id = 1;
+	string name = 2;
+	// 保证插入数据的幂等性
+	string code = 3;
+	string url = 4;
+}
+
+message ProductSize{
+	int64 id = 1;
+	string name = 2;
+	string code = 3;
+}
+
+message ProductSeo {
+	int64 id = 1;
+	string title = 2;
+	string keywords = 3;
+	string desc =4;
+	string code = 6;
+}
+
+message AddProductResponse {
+	int64 product_id = 1;
+}
+
+message RequestID {
+	int64 product_id = 1;
+}
+message ProductInfo{
+	int64 id = 1;
+	string name = 2;
+	string sku = 3;
+	double price = 4;
+	string description = 5;
+	int64  category_id = 6;
+	// repeated 结构体对象
+	repeated ProductImage image = 7;
+	// 商品的尺寸
+	repeated ProductSize size = 8;
+	// 搜索引擎优化的展示的信息
+	ProductSeo seo = 9;
+}
+
+message Response {
+	int64 product_id = 1;
+}

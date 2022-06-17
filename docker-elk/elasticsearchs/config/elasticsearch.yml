@@ -1,0 +1,6 @@
+clster.name: "micro-cluster"
+network.host: 0.0.0.0
+
+xpack.license.self_generated.type: trail
+xpack.securiyt.enabled: true
+xpack.monitoring.collection.enabled: true

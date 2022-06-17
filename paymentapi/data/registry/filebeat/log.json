@@ -1,0 +1,16 @@
+{"op":"set","id":1}
+{"k":"filebeat::logs::native::22188059-16777223","v":{"ttl":-1,"type":"log","id":"native::22188059-16777223","source":"/Users/heguo/workbanch/Go/1源码/microdemo/paymentapi/micro.log","timestamp":[2061785642080,1655392942],"FileStateOS":{"inode":22188059,"device":16777223},"identifier_name":"native","prev_id":"","offset":0}}
+{"op":"set","id":2}
+{"k":"filebeat::logs::native::22188059-16777223","v":{"source":"/Users/heguo/workbanch/Go/1源码/microdemo/paymentapi/micro.log","offset":1754,"FileStateOS":{"inode":22188059,"device":16777223},"identifier_name":"native","id":"native::22188059-16777223","prev_id":"","timestamp":[2062366416080,1655392943],"ttl":-1,"type":"log"}}
+{"op":"set","id":3}
+{"k":"filebeat::logs::native::22188059-16777223","v":{"timestamp":[2061718837080,1655393130],"ttl":-1,"identifier_name":"native","id":"native::22188059-16777223","source":"/Users/heguo/workbanch/Go/1源码/microdemo/paymentapi/micro.log","offset":2150,"type":"log","FileStateOS":{"inode":22188059,"device":16777223},"prev_id":""}}
+{"op":"set","id":4}
+{"k":"filebeat::logs::native::22188059-16777223","v":{"FileStateOS":{"inode":22188059,"device":16777223},"identifier_name":"native","id":"native::22188059-16777223","type":"log","offset":2334,"timestamp":[2061823396080,1655393173],"ttl":-1,"prev_id":"","source":"/Users/heguo/workbanch/Go/1源码/microdemo/paymentapi/micro.log"}}
+{"op":"set","id":5}
+{"k":"filebeat::logs::native::22188059-16777223","v":{"type":"log","identifier_name":"native","prev_id":"","offset":2409,"timestamp":[2062572989080,1655393479],"FileStateOS":{"inode":22188059,"device":16777223},"id":"native::22188059-16777223","source":"/Users/heguo/workbanch/Go/1源码/microdemo/paymentapi/micro.log","ttl":-1}}
+{"op":"set","id":6}
+{"k":"filebeat::logs::native::22188059-16777223","v":{"id":"native::22188059-16777223","prev_id":"","source":"/Users/heguo/workbanch/Go/1源码/microdemo/paymentapi/micro.log","offset":2409,"type":"log","FileStateOS":{"inode":22188059,"device":16777223},"timestamp":[2061874677080,1655393782],"ttl":-1,"identifier_name":"native"}}
+{"op":"set","id":7}
+{"k":"filebeat::logs::native::22188059-16777223","v":{"source":"/Users/heguo/workbanch/Go/1源码/microdemo/paymentapi/micro.log","offset":2409,"timestamp":[2061876115080,1655393782],"ttl":-1,"id":"native::22188059-16777223","prev_id":"","type":"log","FileStateOS":{"inode":22188059,"device":16777223},"identifier_name":"native"}}
+{"op":"set","id":8}
+{"k":"filebeat::logs::native::22188059-16777223","v":{"source":"/Users/heguo/workbanch/Go/1源码/microdemo/paymentapi/micro.log","ttl":-1,"type":"log","identifier_name":"native","id":"native::22188059-16777223","offset":2409,"timestamp":[2061876115080,1655393782],"FileStateOS":{"device":16777223,"inode":22188059},"prev_id":""}}

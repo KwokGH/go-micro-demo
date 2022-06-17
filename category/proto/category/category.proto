@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package micro.service.category;
+option go_package = "./;category";
+
+service Category {
+  rpc CreateCategory(CreateCategoryRequest) returns(CreateCategoryResponse) {}
+  rpc GetCategoryByName(GetCategoryByNameRequest) returns(GetCategoryByNameResponse) {}
+}
+
+message CreateCategoryRequest {
+  string name = 1;
+  int32 level = 2;
+  int64 parent_id = 3;
+  string image = 4;
+  string desc = 5;
+}
+message CreateCategoryResponse {
+  int64 id = 1;
+}
+
+message GetCategoryByNameRequest {
+  string name = 1;
+}
+message GetCategoryByNameResponse {
+  int64 id = 1;
+  string name = 2;
+  int32 level = 3;
+  int64 parent_id = 4;
+  string image = 5;
+  string desc = 6;
+}
