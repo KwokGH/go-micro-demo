@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	sandboxClientID = "ARQv2ligPt6jzPDae9SKn8pilrMPM3X70TiwlaFmkPmpH8qf40X54Ce6UVk1Yck0SzSPCrj47VeyPB13"
+	sandboxClientID = "paypal提供的clientID"
 )
 
 type PaymentHandler struct {
@@ -71,7 +71,7 @@ func (e *PaymentHandler) PayPalRefund(c *gin.Context) {
 			},
 		},
 	}
-	paymentInfo.PaymentSid = "EMt1ym98nsQzaIEucbGswYC0kQlfsbOOECaUA8gowzbAldx81m4XSz1EODCenlyebvZ9F9xS7ujtsut7"
+	//paymentInfo.PaymentSid = "密钥"
 	paypalClient, err := paypal.NewClient(sandboxClientID, paymentInfo.PaymentSid, sandBox)
 	if err != nil {
 		log.Error(err)
